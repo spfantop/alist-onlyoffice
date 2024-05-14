@@ -1,0 +1,20 @@
+{
+  "name": "s",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "jsonwebtoken": "^9.0.2",
+    "axios": "^1.6.8",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.19.2",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
+}

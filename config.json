@@ -1,0 +1,14 @@
+{
+  "host": "https://office.com",
+  "port": 443,
+  "alistURL": "https://pans.com",
+  "username": "admin",
+  "password": "admin",
+  "onlyofficeURL": "https://onlyoffice/web-apps/apps/api/documents/api.js",
+  "tokenSecret": "123",
+  "allowedDomains": [
+    "pans.com", "pan.com", "192.168.2.250"
+  ],
+  "owner": "笔尖文档",
+  "rejectUnauthorized": false
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+
+<body>
+<div id="placeholder"></div>
+<script type="text/javascript" src=<%= config.onlyofficeURL %>></script>
+<script>
+    const docEditor = new DocsAPI.DocEditor("placeholder", {
+        "document": {
+            "info": {
+                "owner": "<%= config.owner %>",
+            },
+            "fileType": "<%= fileType %>",
+            "key": "<%= key %>",
+            "permissions": {
+                "edit": <%= edit %>,
+                "comment": <%= comment %>,
+                "download":<%= download %>,
+                "print": <%= print %>,
+                "fillForms": <%= fillForms %>,
+            },
+            "title": "<%= title %>",
+            "url": "<%= url %>",
+        },
+        "editorConfig": {
+            "lang": "zh-CN",
+            "mode": "<%= mode %>",
+            "customization": {
+                "customer": {
+                    "address": "宇宙一号",
+                    "info": "笔尖文档-解释权归笔尖文档所有",
+                    "logo": "https://henniubi.com/logo.ico",
+                    "mail": "admin@henniubi.com",
+                    "name": "SuperFan",
+                    "www": "henniubi.com"
+                },
+                "logo": {
+                    "image": "https://henniubi.com/logo.ico",
+                    "imageEmbedded": "https://henniubi.com/logo.ico",
+                    "url": "https://henniubi.com"
+                },
+                "help": false,
+            },
+        },
+        "height": "950px",
+        "type": "desktop",
+        "token": "<%= token %>",
+    });
+</script>
+</body>
+</html>
